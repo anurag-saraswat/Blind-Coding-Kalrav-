@@ -1,0 +1,11 @@
+
+1. Program to print "Hello C" using if and else statement both.
+
+2. C program to print your name 10 times without using any loop or goto statement.
+
+3. C program to print message (Hello World) without using any semicolon (;) in program.
+
+4. Program to check number is whether EVEN or ODD without using any arithmetic or relational operators.
+
+5. C program to keep calculate the sum of the digits of a number until the number is a single digit.
+   Example: 147 → 1+4+7 = 12 → 1+2 = 3

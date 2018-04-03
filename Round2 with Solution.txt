@@ -1,0 +1,103 @@
+1. Program to check number is whether EVEN or ODD without using any arithmetic or relational operators.
+
+Solution: 
+
+int main()
+{
+    int number;
+     
+    //input an integer number
+    printf("Please input an integer number: ");
+    scanf("%d",&number);
+         
+    //check 0th bit of number is 1 or 0
+    (number & 0x01) ? printf("%d is an EVEN Number.”, number) :  printf("%d is an ODD Number.",number) ;
+     
+    printf("\n";)
+    return 0;   
+}
+
+
+2. Program to print "Hello C" using if and else statement both.
+
+Solution:
+
+/*Program to print "Hello C" using if and else 
+statement both.*/
+ 
+#include <stdio.h>
+int main() 
+{ 
+    if(!printf("Hello ")) 
+        ; 
+    else
+        printf("C\n"); 
+    return 0; 
+} 
+
+
+3. C program to print your name 10 times without using any loop or goto statement.
+
+Solution:
+
+#include <stdio.h>
+void printName(char* name,int count) 
+{ 
+    printf("%03d : %s\n",count+1,name); 
+    count+=1; 
+    if(count<10) 
+        printName(name,count); 
+} 
+int main() 
+{ 
+    char name[50];  
+    printf("\nEnter you name :"); 
+    scanf("%s",name); 
+    printName(name,0); 
+    return 0; 
+}
+
+
+4. C program to print message (Hello World) without using any semicolon (;) in program.
+
+Solution:
+
+/*Program to print "Hello C" or any message 
+without using any “;” in program*/
+ 
+#include <stdio.h>
+int main() 
+{ 
+    if(printf("Hello C\n")) 
+    { } 
+}
+
+
+5. C program to keep calculate the sum of the digits of a number until the number is a single digit.
+ Example:
+  Input: Enter a number: 147
+  Output: 3
+  Explanation: 147 → 1+4+7 = 12 → 1+2 = 3
+
+Solution:
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int number = 147; //Any number.
+	int res;
+
+	if(number)
+		res = number % 9 == 0 ? 9 : number % 9 ;
+	else 
+		res = 0;
+
+	//print the result
+	cout<<res;
+
+	return 0;
+}
+
+
